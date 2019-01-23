@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/24/user/789383).
-* Наставник: `Неизвестно`.
+* Студент: [Булгару Роман](https://up.htmlacademy.ru/htmlcss/24/user/789383).
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
