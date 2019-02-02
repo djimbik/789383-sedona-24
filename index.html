@@ -34,32 +34,79 @@
         <b class="intro__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
       </div>
 
-      <section class="reasons"> <!--Я здесь секцию сделал т.к. думаю, что нормально будет объединить список с преимуществами и как бы параграф как начало списка, думаешь по-другому сделать? -->
+      <section class="reasons">
         <p class="reasons__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
         <!-- список -->
       </section>
 
-      <div class="search">
+      <section class="search">
         <b class="search__intro">Заинтересовались?</b>
         <p class="search__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="search__button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-
-        <!-- Здесь будет форма -->
-      </div>
+        <button class="search__open-button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="search__item">
+            <label for="search__date-in">Дата заезда:</label>
+            <input id="search__date-in" type="text" name="date-in" value="24 апреля 2017">
+            <button class="search__date-button">
+              <span class="visually-hidden">Показать календарь</span>
+            </button>
+          </p>
+          <p class="search__item">
+            <label for="search__date-out">Дата выезда:</label>
+            <input id="search__date-out" type="text" name="date-out" value="4 июля 2017">
+            <button class="search__date-button">
+              <span class="visually-hidden">Показать календарь</span>
+            </button>
+          </p>
+          <p class="search__item">
+            <label for="search__adults">Взрослые:</label>
+            <button class="search__minus-button">
+              <span class="visually-hidden">Уменьшить количество людей</span>
+            </button>
+            <input id="search__adults" type="number" name="adults" min="1" step="1" value="2">
+            <button class="search__plus-button">
+              <span class="visually-hidden">Увеличить количество людей</span>
+            </button>
+          </p>
+          <p class="search__item">
+            <label for="search__children">Дети:</label>
+            <button class="search__minus-button">
+              <span class="visually-hidden">Уменьшить количество людей</span>
+            </button>
+            <input id="search__children" type="number" name="children" min="0" step="1" value="0">
+            <button class="search__plus-button">
+              <span class="visually-hidden">Увеличить количество людей</span>
+            </button>
+          </p>
+          <button class="search__form-button" type="submit">Найти</button>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">
       <a class="footer__name-link">#visitSEDONA</a>
       <ul class="footer__social">
-        <li><a class="social-button" href="">Твиттер</a></li>
-        <li><a class="social-button" href="">Фейсбук</a></li>
-        <li><a class="social-button" href="">Ютуб</a></li>
+        <li>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Седона в Твиттере</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Седона в Фейсбук</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#">
+            <span class="visually-hidden">Седона в Ютуб</span>
+          </a>
+        </li>
       </ul>
       <p class="footer__copyright">
         <span>Website by</span>
         <a class="button" href="https://htmlacademy.ru">
-          HTML Academy
+           <span class="visually-hidden">HTML Academy</span>
         </a>
       </p>
     </footer>
