@@ -39,56 +39,49 @@
 
         <!-- список -->
         <ul class="reasons__list features-list">
-          <li class="features-list__item">
-            <div class="features-list__block features-list__block--blue">
+          <li class="features-list__item features-list__item--blue">
+            <div class="features-list__block">
               <h3>Настоящий городок</h3>
               <span>№1</span> <!-- Для знаков "—" можно использовать ::before и ::after, наверное, чтобы в пиксели попадать,просто шрифтом не знаю будет ли попадать в пиксели -->
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="img/town-photo.jpg" width="800" height="256" alt="Фото города">
           </li>
-          <li class="features-list__item">
-            <ul class="features-list__tab-list">
-              <li class="features-list__block">
-                <h3>Жильё</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li class="features-list__block">
-                <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li class="features-list__block">
-                <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
-              </li>
-            </ul>
-          </li>
-          <li class="features-list__item">
-            <div class="features-list__block features-list__block--blue">
+          <li class="features-list__item features-list__item--blue">
+            <div class="features-list__block">
               <h3>Там есть Мост дьявола</h3>
               <span>№2</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <img src="img/devil-bridge.jpg" width="800" height="256" alt="Фото Мост дьявола">
           </li>
+          <li class="features-list__item features-list__item--grey">
+            <h3>Небольшая площадь</h3>
+            <span>№3</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="features-list__item features-list__item--grey">
+            <h3>Красивая дорога</h3>
+            <span>№4</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features-list__item features-list__item--grey">
+            <h3>Мало туристов</h3>
+            <span>№5</span>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </li>
+
           <li class="features-list__item">
-            <ul class="features-list__tab-list">
-              <li class="features-list__block">
-                <h3>Небольшая площадь</h3>
-                <span>№3</span>
-                <p>Все достопримечательности находятся очень близко</p>
-              </li>
-              <li class="features-list__block">
-                <h3>Красивая дорога</h3>
-                <span>№4</span>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </li>
-              <li class="features-list__block">
-                <h3>Мало туристов</h3>
-                <span>№5</span>
-                <p>Большинство едет в гранд каньон и толпится там</p>
-              </li>
-            </ul>
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="features-list__item">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="features-list__item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
@@ -117,7 +110,7 @@
             <button class="search__minus-button" type="button">
               <span class="visually-hidden">Уменьшить количество людей</span>
             </button>
-            <input id="search__adults" type="number" name="adults" min="1" step="1" value="2">
+            <input id="search__adults" type="text" name="adults" value="2">
             <button class="search__plus-button" type="button">
               <span class="visually-hidden">Увеличить количество людей</span>
             </button>
@@ -127,7 +120,7 @@
             <button class="search__minus-button" type="button">
               <span class="visually-hidden">Уменьшить количество людей</span>
             </button>
-            <input id="search__children" type="number" name="children" min="0" step="1" value="0">
+            <input id="search__children" type="text" name="children" value="0">
             <button class="search__plus-button" type="button">
               <span class="visually-hidden">Увеличить количество людей</span>
             </button>
@@ -135,7 +128,11 @@
           <button class="search__form-button" type="submit">Найти</button>
         </form>
       </section>
+
+      <img src="img/main-map.jpg" width="1200" height="593" alt="Седона на карте">
     </main>
+
+
 
     <footer class="footer">
       <a class="footer__name-link">#visitSEDONA</a>

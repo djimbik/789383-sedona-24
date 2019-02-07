@@ -29,9 +29,9 @@
 
     <main>
         <!-- Форма -->
-        <section class="hotel-filter">
+      <section class="hotel-filter">
         <h2 class="visually-hidden">Фильтр отелей</h2>
-        <form class="hotel-filter__form" method="get" action="https://echo.htmlacademy.ru" oninput="priceMin.value=pricecountMin.value, priceMax.value=pricecountMax.value">
+        <form class="hotel-filter__form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="hotel-filter__field hotel-filter__field--infrastructure">
             <legend>Инфраструктура:</legend>
             <ul class="hotel-filter__list">
@@ -70,24 +70,31 @@
 
           <fieldset class="hotel-filter__field hotel-filter__field--price">
             <legend>Стоимость в сутки (Р):</legend>
-            <div class="hotel-filter__output-area">
+            <div class="hotel-filter__price-controls">
               <p>
-                ОТ <output name="priceMin"><label for="pricecountMin">0</label></output>
+                <label for="priceMin">ОТ</label>
+                <input type="text" value="0" name="priceMin" id="priceMin">
               </p>
               <p>
-                ДО <output name="priceMax"><label for="pricecountMax">3000</label></output>
+                <label  for="priceMax">ДО</label>
+                <input type="text" value="3000" name="priceMax" id="priceMax">
               </p>
             </div>
-            <!-- здесь вообще не уверен нужно ли два инпута range делать и объединять или один, и потом на JS'e придумывать что-то -->
-            <input type="range" min="0" max="5000" step="500" value="0" name="pricecount-min"  id="pricecountMin" >
-            <input type="range" min="0" max="5000" step="500" value="3000" name="pricecount-max"  id="pricecountMax">
-            <!-- два ползунка для css или JS, пока не представляю как их использовать, но думаю они нужны будут)
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
-            -->
+
+            <div class="hotel-filter__range-controls">
+              <div class="hotel-filter__scale">
+                <div class="hotel-filter__bar"></div>
+              </div>
+              <button class="hotel-filter__toggle hotel-filter__toggle--min" type="button">
+                <span class="visually-hidden">Ползунок диапозона "от"</span>
+              </button>
+              <button class="hotel-filter__toggle hotel-filter__toggle--max" type="button">
+                <span class="visually-hidden">Ползунок диапозона "до"</span>
+              </button>
+            </div>
           </fieldset>
 
-          <button class="hotel-filter__button" type="button">Показать</button>
+          <button class="hotel-filter__button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -99,13 +106,25 @@
           <span>Сортировка:</span>
           <ul class="search-result__filter">
             <li class="search-result__item search-result__item--current">
-              <button>По цене</button>
+              <a href="#">По цене</a>
             </li>
             <li class="search-result__item">
-              <button>По типу</button>
+              <a href="#">По типу</a>
             </li>
             <li class="search-result__item">
-              <button>По рейтингу</button>
+              <a href="#">По рейтингу</a>
+            </li>
+          </ul>
+          <ul class="search-result__tab-filter">
+            <li>
+              <a href="#">
+                <span class="visually-hidden">Упорядочить снизу вверх</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="visually-hidden">Упорядочить сверху вниз</span>
+              </a>
             </li>
           </ul>
         </section>
