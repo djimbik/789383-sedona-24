@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -31,8 +34,9 @@
     <main class="container">
       <h1 class="visually-hidden">Город Седона</h1>
       <div class="intro">
-        <b class="intro__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        <p class="intro__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </div>
+
 
       <section class="reasons">
         <p class="reasons__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -88,7 +92,7 @@
 
       <section class="search">
         <b class="search__intro">Заинтересовались?</b>
-        <p class="search__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="search__open-button" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
         <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="search__item">
@@ -110,7 +114,7 @@
             <button class="search__minus-button" type="button">
               <span class="visually-hidden">Уменьшить количество людей</span>
             </button>
-            <input id="search__adults" type="text" name="adults" value="2">
+            <input class="search__number" id="search__adults" type="text" name="adults" value="2">
             <button class="search__plus-button" type="button">
               <span class="visually-hidden">Увеличить количество людей</span>
             </button>
@@ -120,7 +124,7 @@
             <button class="search__minus-button" type="button">
               <span class="visually-hidden">Уменьшить количество людей</span>
             </button>
-            <input id="search__children" type="text" name="children" value="0">
+            <input class="search__number" id="search__children" type="text" name="children" value="0">
             <button class="search__plus-button" type="button">
               <span class="visually-hidden">Увеличить количество людей</span>
             </button>
@@ -155,7 +159,7 @@
       </ul>
       <p class="footer__copyright">
         <span>Website by</span>
-        <a class="button" href="https://htmlacademy.ru">
+        <a class="footer__button" href="https://htmlacademy.ru">
            <span class="visually-hidden">HTML Academy</span>
         </a>
       </p>

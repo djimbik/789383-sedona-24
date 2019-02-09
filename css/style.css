@@ -1,0 +1,430 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.main-navigation {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+.container {    /* изменить имя класса */
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 507px;
+
+  background-image:
+    url("../img/intro-welcome.svg"),
+    url("../img/intro-mask.svg"),
+    url("../img/background-mountains.jpg");
+  background-repeat: no-repeat;
+  background-size:
+    459px 353px,
+    auto,
+    1200px 773px;
+  background-position:
+    50% 76px,
+    50% 450px,
+    50% -56px;
+}
+
+.intro {
+  margin: 0 auto;
+  /*margin-bottom: 37px;*/
+
+  background-color: #ffffff;
+}
+
+.intro__header {
+  width: 440px;
+  margin: 0 auto;
+  padding-top: 57px;
+
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.reasons {
+  background-color: #ffffff;
+}
+
+.reasons__description {
+  width: 491px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 37px;
+
+  font-weight: 400;
+}
+
+.reasons__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+}
+
+.features-list__item {
+  width: 400px;
+}
+
+.features-list__item--blue{
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.features-list__item--grey {
+  background-color: #eeeeee;
+}
+
+.features-list__item h3 {
+  font-size: 21px;
+  text-align: center;
+}
+
+.features-list__item span {
+  display: block;
+
+  font-weight: 400;
+  text-align: center;
+}
+
+.features-list__item p {
+  width: 281px;
+  margin: 0 auto;
+
+  font-weight: 400;
+  text-align: center;
+}
+
+.search__intro {
+  display: block;
+
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.search__description {
+  width: 436px;
+  margin: 0 auto;
+
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.search__open-button {
+  font: inherit;
+  font-size: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  color: #ffffff;
+
+  background-color: #766357;
+  border: none;
+}
+
+.search__open-button:hover,
+.search__open-button:focus {
+  background-color: #604e43;
+}
+
+.search__open-button:active {
+  color: #928a85;
+
+  background-color: #503e33;
+}
+
+.search__form input {
+  font: inherit;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search__form input:hover {
+  background-color: #ebebeb;
+}
+
+.search__form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.search__number {
+  text-align: center;
+}
+
+.search__form-button {
+  font: inherit;
+  font-size: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  color: #ffffff;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search__form-button:hover,
+.search__form-button:focus {
+  background-color: #669ec0;
+}
+
+.search__form-button:active {
+  color: #94b9d2;
+
+  background-color: #5496bd;
+}
+
+/* стили для иннер */
+
+.hotel-filter {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-image:
+    url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 562px;
+  background-position: center;
+}
+
+.hotel-filter__field {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-weight: 400;
+
+  color: #ffffff;
+
+  border: none;
+}
+
+.hotel-filter__field legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hotel-filter__list {
+  list-style: none;
+}
+
+.hotel-filter__price-controls {
+  border: 2px solid #ffffff;
+}
+
+.hotel-filter__price-controls input {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 400;
+
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+}
+
+.hotel-filter__button {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.hotel-filter__button:hover,
+.hotel-filter__button:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.search-result__total {
+  font-size: 21px;
+}
+
+.search-result span {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.search-result__filter {
+  list-style: none;
+}
+
+.search-result__item a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+
+  color: rgba(0, 0, 0, 0.3);
+
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.search-result__item a:hover,
+.search-result__item a:focus {
+  color: #81b3d2;
+}
+
+.search-result__item a:active {
+  color: #000000;
+
+  border: none;
+}
+
+.search-result__item--current a {
+  color: #81b3d2;
+
+  border: none;
+}
+
+.search-result__tab-filter {
+  list-style: none;
+}
+
+.catalog__list {
+  list-style: none;
+}
+
+.catalog__name {
+  font-size: 21px;
+}
+
+.catalog__name a {
+  color: #000000;
+}
+
+.catalog__name a:hover,
+.catalog__name a:focus {
+  color: #81b3d2;
+}
+
+.catalog__name a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog__mark,
+.catalog__price {
+  color: #333333;
+}
+
+.catalog__button {
+  font: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  color: #ffffff;
+
+  border: none;
+}
+
+.catalog__button--more-link {
+  background-color: #81b3d2;
+}
+
+.catalog__button--more-link:hover,
+.catalog__button--more-link:focus {
+  background-color: #669ec0;
+}
+
+.catalog__button--more-link:active {
+  color: rgba(255, 255, 255, 0,3);
+
+  background-color: #5496bd;
+}
+
+.catalog__button--book-link {
+  background-color: #766357;
+}
+
+.catalog__button--book-link:hover,
+.catalog__button--book-link:focus {
+  background-color: #604e43;
+}
+
+.catalog__button--book-link:active {
+  color: rgba(255, 255, 255, 0,3);
+
+  background-color: #503e33;
+}
+
+.catalog__rate {
+  color: #666666;
+
+  background-color: #f2f2f2;
+}
+
+/*конец стилей для инер */
+
+.footer__name-link {
+  font-size: 21px;
+}
+
+.footer__social {
+  list-style: none;
+}
+
+.footer__copyright span {
+  font-weight: 400;
+}
+
