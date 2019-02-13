@@ -16,15 +16,67 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .main-navigation {
+  padding-top: 16px;
+  padding-bottom: 18px;
+  padding-right: 72px;
+  padding-left: 72px;
+
   color: #000000;
 
   background-color: #ffffff;
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.site-navigation li:nth-child(4n+1),
+.site-navigation li:nth-child(4n+2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(4n+3),
+.site-navigation li:nth-child(4n+4) {
+  text-align: right;
+}
+
+.site-navigation li:nth-child(4n+1),
+.site-navigation li:nth-child(4n+4) {
+  width: 240px;
+}
+
+.site-navigation li:nth-child(4n+2),
+.site-navigation li:nth-child(4n+3) {
+  width: 288px;
 }
 
 .site-navigation a {
@@ -78,12 +130,15 @@ a {
 }
 
 .reasons {
+  margin-bottom: 55px;
+
   background-color: #ffffff;
 }
 
 .reasons__description {
   width: 491px;
   margin: 0 auto;
+  margin-bottom: 51px;
   padding: 0;
   padding-top: 37px;
 
@@ -98,27 +153,78 @@ a {
 
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .features-list__item {
   width: 400px;
 }
 
+.features-list__item:first-of-type {
+  order: -4;
+}
+
+.features-list__item:nth-of-type(6) {
+  order: -3;
+}
+
+.features-list__item:nth-of-type(7) {
+  order: -2;
+}
+
+.features-list__item:nth-of-type(8) {
+  order: -1;
+}
+
 .features-list__item--blue{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+
   color: #ffffff;
 
   background-color: #81b3d2;
 }
 
+.features-list__block {
+  width: 400px;
+}
+
+.features-list__block--right {
+  order: 1;
+}
+
 .features-list__item--grey {
+  min-height: 256px;
+
   background-color: #eeeeee;
 }
 
+.features-list__item--white {
+  min-height: 331px;
+}
+
 .features-list__item h3 {
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 25px;
+
   font-size: 21px;
   text-align: center;
 }
 
+.features-list__item--white h3 {
+  padding-top: 160px;
+}
+
 .features-list__item span {
   display: block;
+  margin-bottom: 25px;
 
   font-weight: 400;
   text-align: center;
@@ -132,8 +238,21 @@ a {
   text-align: center;
 }
 
+.features-list__item--blue p {
+  width: 305px;
+}
+
+.features-list__item--grey p {
+  width: 265px;
+}
+
+.features-list__item--white p {
+  width: 285px;
+}
+
 .search__intro {
   display: block;
+  margin-bottom: 32px;
 
   font-size: 30px;
   line-height: 36px;
@@ -143,6 +262,7 @@ a {
 .search__description {
   width: 436px;
   margin: 0 auto;
+  margin-bottom: 52px;
 
   line-height: 24px;
   font-weight: 400;
@@ -150,6 +270,8 @@ a {
 }
 
 .search__open-button {
+  /*margin: 0 auto;*/
+
   font: inherit;
   font-size: 21px;
   text-transform: uppercase;
@@ -171,6 +293,12 @@ a {
   color: #928a85;
 
   background-color: #503e33;
+}
+
+.search__form {
+  width: 568px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .search__form input {
@@ -219,6 +347,47 @@ a {
   background-color: #5496bd;
 }
 
+.example {
+  /*z-index: 10;*/
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+
+  min-height: 120px;
+
+
+  background-color: rgba(255,255,255,0.9);
+}
+
+.footer-main {
+  position: relative;
+  z-index: 100;
+
+  margin-top: -120px;
+}
+
+.footer__name-link {
+  width: 33%;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.footer__social {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  width: 33%;
+  margin: 0 auto;
+
+}
+
 /* стили для иннер */
 
 .hotel-filter {
@@ -232,7 +401,33 @@ a {
   background-position: center;
 }
 
+.hotel-filter__form {
+  width: 1056px;
+  margin: 0 auto;
+}
+
+.hotel-filter__field-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.hotel-filter__field--infrastructure {
+  width: 240px;
+}
+
+.hotel-filter__field--typeofhouse {
+  width: 288px;
+}
+
+.hotel-filter__field--price {
+  width: 528px;
+}
+
 .hotel-filter__field {
+  margin: 0;
+  padding: 0;
+
   font: inherit;
   font-size: 14px;
   line-height: 21px;
@@ -246,12 +441,30 @@ a {
 }
 
 .hotel-filter__field legend {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   font-size: 16px;
   font-weight: 700;
 }
 
+.hotel-filter__field--price legend {
+  padding-bottom: 12px;
+}
+
 .hotel-filter__list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.hotel-filter__option {
+  padding-bottom: 32px;
+}
+
+.hotel-filter__option label {
+  margin-left: 40px;
 }
 
 .hotel-filter__price-controls {
@@ -295,18 +508,51 @@ a {
   background-color: #ffffff;
 }
 
+.search-result {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1056px;
+  margin: 0 auto;
+}
+
 .search-result__total {
+  width: 120px;
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 33px;
+
   font-size: 21px;
 }
 
 .search-result span {
+  width: 120px;
+  padding-top: 39px;
+  padding-bottom: 35px;
+
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  text-align: right;
 }
 
 .search-result__filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 288px;
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+
   list-style: none;
+}
+
+.search-result__item {
+  margin-left: 34px;
+  padding-top: 39px;
+  padding-bottom: 35px;
+
+  line-height: 18px;
 }
 
 .search-result__item a {
@@ -337,11 +583,32 @@ a {
 }
 
 .search-result__tab-filter {
+  width: 528px;
+  margin: 0;
+  padding: 0;
+
+  text-align: right;
+
   list-style: none;
 }
 
 .catalog__list {
+  width: 1056px;
+  margin: 0 auto;
+  padding: 0;
+
   list-style: none;
+}
+
+.catalog__item {
+  display: flex;
+
+}
+
+.catalog__item-wrapper {
+  width: 270px;
+  margin-left: 31px;
+  margin-right: 522px;
 }
 
 .catalog__name {
@@ -363,7 +630,19 @@ a {
 
 .catalog__mark,
 .catalog__price {
+  display: inline-block;
+
   color: #333333;
+  font-weight: 400;
+}
+
+.catalog__mark {
+  width: 110px;
+  margin-right: 6px;
+}
+
+.catalog__price {
+  width: 143px;
 }
 
 .catalog__button {
@@ -409,7 +688,9 @@ a {
 }
 
 .catalog__rate {
+
   color: #666666;
+  font-weight: 400;
 
   background-color: #f2f2f2;
 }
