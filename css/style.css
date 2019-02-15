@@ -91,7 +91,6 @@ input[type="radio"].visually-hidden {
 }
 
 .container {    /* изменить имя класса */
-  width: 1200px;
   margin: 0 auto;
   padding-top: 507px;
 
@@ -154,7 +153,6 @@ input[type="radio"].visually-hidden {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  /*width: 1200px;*/
   margin: 0 auto;
 }
 
@@ -181,7 +179,7 @@ input[type="radio"].visually-hidden {
 .features-list__item--blue{
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 100%;
 
   color: #ffffff;
 
@@ -359,7 +357,6 @@ input[type="radio"].visually-hidden {
 /* стили для иннер */
 
 .hotel-filter {
-  width: 1200px;
   margin: 0 auto;
 
   background-image:
@@ -670,7 +667,6 @@ input[type="radio"].visually-hidden {
 .footer {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
   margin: 0 auto;
 
   min-height: 120px;
