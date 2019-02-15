@@ -59,6 +59,14 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.site-navigation li {
+  width: 240px;
+}
+
+.site-navigation li:nth-child(4n+2) {
+  margin-right: 96px;
+}
+
 .site-navigation li:nth-child(4n+1),
 .site-navigation li:nth-child(4n+2) {
   text-align: left;
@@ -67,16 +75,6 @@ input[type="radio"].visually-hidden {
 .site-navigation li:nth-child(4n+3),
 .site-navigation li:nth-child(4n+4) {
   text-align: right;
-}
-
-.site-navigation li:nth-child(4n+1),
-.site-navigation li:nth-child(4n+4) {
-  width: 240px;
-}
-
-.site-navigation li:nth-child(4n+2),
-.site-navigation li:nth-child(4n+3) {
-  width: 288px;
 }
 
 .site-navigation a {
@@ -156,7 +154,7 @@ input[type="radio"].visually-hidden {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  /*width: 1200px;*/
   margin: 0 auto;
 }
 
@@ -240,14 +238,17 @@ input[type="radio"].visually-hidden {
 
 .features-list__item--blue p {
   width: 305px;
+  margin-bottom: 52px;
 }
 
 .features-list__item--grey p {
   width: 265px;
+  margin-bottom: 52px;
 }
 
 .features-list__item--white p {
   width: 285px;
+  margin-bottom: 68px;
 }
 
 .search__intro {
@@ -347,45 +348,12 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 
+.map-img {
+  display: block;
+}
+
 .example {
   /*z-index: 10;*/
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
-
-  min-height: 120px;
-
-
-  background-color: rgba(255,255,255,0.9);
-}
-
-.footer-main {
-  position: relative;
-  z-index: 100;
-
-  margin-top: -120px;
-}
-
-.footer__name-link {
-  width: 33%;
-  margin: 0 auto;
-
-  text-align: center;
-}
-
-.footer__social {
-  width: 33%;
-  margin: 0 auto;
-}
-
-.footer__copyright {
-  width: 33%;
-  margin: 0 auto;
-
 }
 
 /* стили для иннер */
@@ -688,6 +656,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog__rate {
+  height: 100%;
 
   color: #666666;
   font-weight: 400;
@@ -697,15 +666,46 @@ input[type="radio"].visually-hidden {
 
 /*конец стилей для инер */
 
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+
+  min-height: 120px;
+
+
+  background-color: rgba(255,255,255,0.9);
+}
+
+.footer-main {
+  position: relative;
+  z-index: 100;
+
+  margin-top: -120px;
+}
+
 .footer__name-link {
+  width: 33.33%;
+  margin: 0 auto;
+
+  /*text-align: center;*/
   font-size: 21px;
 }
 
 .footer__social {
+  width: 33.33%%;
+  margin: 0 auto;
+
   list-style: none;
+}
+
+.footer__copyright {
+  width: 33.33%%;
+  margin: 0 auto;
 }
 
 .footer__copyright span {
   font-weight: 400;
 }
-
