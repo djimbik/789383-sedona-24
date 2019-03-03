@@ -9,7 +9,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -39,13 +39,16 @@ input[type="radio"].visually-hidden {
 
   width: 1200px;
   margin: 0 auto;
+
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
-.main-header img {
+.main-header__logo {
   position: absolute;
   top: 0;
-  right: 531px;
-  left: 531px;
+  right: 44.25%;
+  left: 44.25%;
 }
 
 .main-navigation {
@@ -99,8 +102,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, .3);
 }
 
-.container {    /* изменить имя класса */
-  margin: 0 auto;
+.main-container {    /* изменить имя класса */
   padding-top: 507px;
 
   background-image:
@@ -225,7 +227,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.features-list__item:nth-of-type(6) h3::before {
+.features-list__item--house h3::before {
   content: "";
 
   position: absolute;
@@ -239,7 +241,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.features-list__item:nth-of-type(7) h3::before{
+.features-list__item--food h3::before{
   content: "";
 
   position: absolute;
@@ -253,7 +255,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.features-list__item:nth-of-type(8) h3::before{
+.features-list__item--gift h3::before{
   content: "";
 
   position: absolute;
@@ -391,15 +393,14 @@ input[type="radio"].visually-hidden {
 }
 
 .search__item--small {
+  display: flex;
+  align-items: center;
+
   width: 230px;
 }
 
 .search__item:first-of-type {
   padding-top: 55px;
-}
-
-.search__item:last-of-type {
-  padding-bottom: 54px;
 }
 
 .search__item--children {
@@ -416,8 +417,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search__date {
-  /*position: relative;*/
-
   width: 346px;
   box-sizing: border-box;
 
@@ -470,58 +469,81 @@ input[type="radio"].visually-hidden {
 }
 
 .search__number {
-  width: 114px;
-  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
 
-  padding-top: 8px;
-  padding-right: 25px;
-  padding-bottom: 8px;
-  padding-left: 25px;
+  box-sizing: border-box;
 
   text-align: center;
 }
 
 .search__minus-button {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.search__minus-button::before {
+  content: "";
+
   position: absolute;
   top: 18px;
-  left: 125px;
+  left: 13px;
 
   width: 12px;
   height: 3px;
 
   background-color: #a9a9a9;
-  border: none;
-  cursor: pointer;
 }
 
-.search__minus-button:hover,
-.search__minus-button:focus {
+.search__minus-button:hover::before,
+.search__minus-button:focus::before {
   background-color: #000;
 }
 
-.search__minus-button:active {
+.search__minus-button:active::before {
   background-color: #81b3d2;
 }
 
+.ops {
+  display: flex;
+}
+
 .search__plus-button {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.search__plus-button::before {
+  content: "";
+
   position: absolute;
   top: 18px;
-  left: 201px;
+  left: 13px;
 
   width: 12px;
   height: 3px;
 
   background-color: #a9a9a9;
-  border: none;
-  cursor: pointer;
 }
 
 .search__plus-button::after {
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 18px;
+  left: 13px;
 
   width: 12px;
   height: 3px;
@@ -533,20 +555,14 @@ input[type="radio"].visually-hidden {
   transform: rotate(-90deg);
 }
 
-.search__plus-button:hover,
-.search__plus-button:focus {
-  background-color: #000;
-}
-
-.search__plus-button:active {
-  background-color: #81b3d2;
-}
-
+.search__plus-button:hover::before,
+.search__plus-button:focus::before,
 .search__plus-button:hover::after,
 .search__plus-button:focus::after {
   background-color: #000;
 }
 
+.search__plus-button:active::before,
 .search__plus-button:active::after {
   background-color: #81b3d2;
 }
@@ -555,6 +571,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding: 16px 197px;
   margin: 0 auto;
+  margin-top: 25px;
   margin-bottom: 55px;
 
   font: inherit;
@@ -664,7 +681,7 @@ input[type="radio"].visually-hidden {
 .hotel-filter__option label {
   position: relative;
 
-  margin-left: 40px;
+  padding-left: 40px;
 
   cursor: pointer;
 }
@@ -674,7 +691,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 0;
-  left: -40px;
+  left: 0;
 
   width: 23px;
   height: 23px;
@@ -688,7 +705,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 0;
-  left: -40px;
+  left: 0;
 
   width: 27px;
   height: 23px;
@@ -1088,7 +1105,7 @@ input[type="radio"].visually-hidden {
   width: 90px;
   height: 17px;
 
-  background-image: url("../img/star-4.png");
+  background-image: url("../img/star-4.png"); /* */
   background-repeat: no-repeat;
 }
 

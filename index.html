@@ -11,7 +11,7 @@
   <div class="page-wrapper">
     <header class="main-header">
       <a href="#">
-        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
+        <img class="main-header__logo" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -31,7 +31,7 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="main-container">
       <h1 class="visually-hidden">Город Седона</h1>
       <div class="intro">
         <p class="intro__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -72,15 +72,15 @@
             <span>— №5 —</span>
             <p>Большинство едет в гранд каньон и&nbsp;толпится там</p>
           </li>
-          <li class="features-list__item features-list__item--white">
+          <li class="features-list__item features-list__item--white features-list__item--house">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="features-list__item features-list__item--white">
+          <li class="features-list__item features-list__item--white features-list__item--food">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="features-list__item features-list__item--white">
+          <li class="features-list__item features-list__item--white features-list__item--gift">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -93,7 +93,7 @@
         <button class="search__open-button" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
         <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="search__wrapper">
-          <p class="search__item">
+          <div class="search__item">
             <label for="search__date-in">Дата заезда:</label>
             <input class="search__date search__date--in" id="search__date-in" type="text" name="date-in" value="24 апреля 2017">
             <button class="search__date-button search__date-button--in" type="button">
@@ -102,8 +102,8 @@
                 <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" fill="#a9a9a9"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#a9a9a9"/>
               </svg>
             </button>
-          </p>
-          <p class="search__item search__item--date-out">
+          </div>
+          <div class="search__item search__item--date-out">
             <label for="search__date-out">Дата выезда:</label>
             <input class="search__date search__date--out" id="search__date-out" type="text" name="date-out" value="4 июля 2017">
             <button class="search__date-button search__date-button--out" type="button">
@@ -112,27 +112,31 @@
               </svg>
               <span class="visually-hidden">Показать календарь</span>
             </button>
-          </p>
-          <p class="search__item search__item--small search__item--adults">
+          </div>
+          <div class="search__item search__item--small search__item--adults">
             <label for="search__adults">Взрослые:</label>
-            <button class="search__minus-button" type="button">
-              <span class="visually-hidden">Уменьшить количество людей</span>
-            </button>
-            <input class="search__number" id="search__adults" type="text" name="adults" value="2">
-            <button class="search__plus-button" type="button">
-              <span class="visually-hidden">Увеличить количество людей</span>
-            </button>
-          </p>
-          <p class="search__item search__item--small search__item--children">
+            <div class="ops">
+              <button class="search__minus-button" type="button">
+                <span class="visually-hidden">Уменьшить количество людей</span>
+              </button>
+              <input class="search__number" id="search__adults" type="text" name="adults" value="2">
+              <button class="search__plus-button" type="button">
+                <span class="visually-hidden">Увеличить количество людей</span>
+              </button>
+            </div>
+          </div>
+          <div class="search__item search__item--small search__item--children">
             <label for="search__children">Дети:</label>
-            <button class="search__minus-button" type="button">
-              <span class="visually-hidden">Уменьшить количество людей</span>
-            </button>
-            <input class="search__number" id="search__children" type="text" name="children" value="0">
-            <button class="search__plus-button" type="button">
-              <span class="visually-hidden">Увеличить количество людей</span>
-            </button>
-          </p>
+            <div class="ops">
+              <button class="search__minus-button" type="button">
+                <span class="visually-hidden">Уменьшить количество людей</span>
+              </button>
+              <input class="search__number" id="search__children" type="text" name="children" value="0">
+              <button class="search__plus-button" type="button">
+                <span class="visually-hidden">Увеличить количество людей</span>
+              </button>
+            </div>
+          </div>
           <button class="search__form-button" type="submit">Найти</button>
           </div>
 
