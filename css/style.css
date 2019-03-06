@@ -118,6 +118,8 @@ input[type="radio"].visually-hidden {
     50% 76px,
     50% 450px,
     50% -56px;
+
+  background-color: #96bbd5;
 }
 
 .intro {
@@ -331,7 +333,7 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   text-transform: uppercase;
   text-align: center;
-
+  vertical-align: middle;
   color: #ffffff;
 
   background-color: #766357;
@@ -612,6 +614,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-size: 1200px 562px;
   background-position: center;
+  background-color: #574241;
 }
 
 .hotel-filter__form {
@@ -947,6 +950,7 @@ input[type="radio"].visually-hidden {
   width: 11px;
   height: 10px;
 
+  vertical-align: middle;
   font-size: 0;
 
   background-image: url("../img/icon-up-dir.svg"); /*Здесь, видимо, чтобы не были черными
@@ -958,6 +962,7 @@ input[type="radio"].visually-hidden {
   width: 11px;
   height: 10px;
 
+  vertical-align: middle;
   font-size: 0;
 
   background-image: url("../img/icon-down-dir.svg");
@@ -1020,6 +1025,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   margin-bottom: 10px;
 
+  vertical-align: middle;
   text-align: left;
   color: #333333;
   font-weight: 400;
