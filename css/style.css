@@ -102,7 +102,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, .3);
 }
 
-.main-container {    /* изменить имя класса */
+.main-container {
   padding-top: 507px;
 
   background-image:
@@ -796,14 +796,16 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -9px;
 
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
 
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+
+  padding: 0;
 }
 
 .hotel-filter__toggle:hover {
@@ -1119,7 +1121,7 @@ input[type="radio"].visually-hidden {
   width: 65px;
   height: 17px;
 
-  background-image: url("../img/star-3.png");
+  background-image: url("../img/star-4.png");
   background-repeat: no-repeat;
 }
 
@@ -1133,7 +1135,7 @@ input[type="radio"].visually-hidden {
   width: 41px;
   height: 17px;
 
-  background-image: url("../img/star-2.png");
+  background-image: url("../img/star-4.png");
   background-repeat: no-repeat;
 }
 
