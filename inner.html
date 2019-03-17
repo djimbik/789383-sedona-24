@@ -16,16 +16,16 @@
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li>
-            <a href="#">Информация</a>
+            <a href="#" class="site-navigation__item">Информация</a>
           </li>
           <li>
-            <a href="#">Фото и видео</a>
+            <a href="#" class="site-navigation__item">Фото и видео</a>
           </li>
           <li>
-            <a href="#">Карта штата</a>
+            <a href="#" class="site-navigation__item">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a href="#" class="site-navigation__item site-navigation__item--curent">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -118,13 +118,19 @@
           </ul>
           <ul class="search-result__tab-filter">
             <li>
-              <a class="search-result__up" href="#">
+              <a class="search-result__pointer search-result__pointer--up" href="#">
                 <span class="visually-hidden">Упорядочить снизу вверх</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                </svg>
               </a>
             </li>
             <li>
-              <a class="search-result__down" href="#">
+              <a class="search-result__pointer search-result__pointer--down search-result__pointer--curent" href="#">
                 <span class="visually-hidden">Упорядочить сверху вниз</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                </svg>
               </a>
             </li>
           </ul>
@@ -212,7 +218,7 @@
       </ul>
       <p class="footer__copyright">
         <span>Website by</span>
-        <a class="footer__button" href="https://htmlacademy.ru">
+        <a class="footer__button" href="https://htmlacademy.ru/intensive/htmlcss">
            <span class="visually-hidden">HTML Academy</span>
            <svg id="Layer_1" width="115" height="41" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
             <title>logo-htmlacademy-small1</title>

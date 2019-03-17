@@ -89,17 +89,21 @@ input[type="radio"].visually-hidden {
   text-align: right;
 }
 
-.site-navigation a {
+.site-navigation__item {
   color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation__item:hover,
+.site-navigation__item:focus {
   color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-navigation__item:active {
   color: rgba(0, 0, 0, .3);
+}
+
+.site-navigation__item--curent {
+  color: #766357;
 }
 
 .main-container {
@@ -146,13 +150,14 @@ input[type="radio"].visually-hidden {
 }
 
 .reasons__description {
-  width: 491px;
+  width: 569px;
   margin: 0 auto;
   margin-bottom: 51px;
   padding: 0;
   padding-top: 27px;
 
   font-weight: 400;
+  text-align: center;
 }
 
 .reasons__list {
@@ -371,7 +376,7 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
 
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid #f2f2f2;
 }
 
 .search__form input:hover {
@@ -380,7 +385,7 @@ input[type="radio"].visually-hidden {
 
 .search__form input:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+
 }
 
 .search__wrapper {
@@ -431,9 +436,9 @@ input[type="radio"].visually-hidden {
   width: 344px;
   box-sizing: border-box;
 
-  padding-top: 8px;
+  padding-top: 6px;
   padding-right: 30px;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
   padding-left: 13px;
 }
 
@@ -733,6 +738,14 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.hotel-filter__checkbox:disabled + label::before {
+  background-image: url("../img/checkbox-off-disabled.png");
+}
+
+.hotel-filter__checkbox:disabled:checked + label::after {
+  background-image: url("../img/checkbox-on-disabled.png");
+}
+
 .hotel-filter__price-controls {
   position: relative;
 
@@ -965,28 +978,35 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.search-result__up {
+.search-result__pointer {
   display: inline-block;
-  margin-right: 13px;
+  /*margin-right: 13px;*/
   width: 11px;
   height: 10px;
 
   vertical-align: middle;
   font-size: 0;
-
-  background-image: url("../img/icon-up-dir.svg"); /*Здесь, видимо, чтобы не были черными
-                                                    стрелочки нужно будет инлайнить в html свгешки, да? */
 }
 
-.search-result__down {
-  display: inline-block;
-  width: 11px;
-  height: 10px;
+.search-result__pointer--up {
+ margin-right: 13px;
+}
 
-  vertical-align: middle;
-  font-size: 0;
+.search-result__pointer path {
+  fill: #cacaca;
+}
 
-  background-image: url("../img/icon-down-dir.svg");
+.search-result__pointer--curent path {
+  fill: #81b3d2;
+}
+
+.search-result__pointer:hover path,
+.search-result__pointer:focus path {
+  fill: #000000;
+}
+
+.search-result__pointer:active path {
+  fill: #81b3d2;
 }
 
 .catalog__list {
