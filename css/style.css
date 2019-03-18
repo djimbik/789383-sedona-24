@@ -128,7 +128,6 @@ input[type="radio"].visually-hidden {
 
 .intro {
   margin: 0 auto;
-  /*margin-bottom: 37px;*/
 
   background-color: #ffffff;
 }
@@ -158,6 +157,7 @@ input[type="radio"].visually-hidden {
 
   font-weight: 400;
   text-align: center;
+  color: #333333;
 }
 
 .reasons__list {
@@ -165,7 +165,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
-
 }
 
 .features-list {
@@ -308,11 +307,19 @@ input[type="radio"].visually-hidden {
 .features-list__item--grey p {
   width: 265px;
   margin-bottom: 52px;
+
+  color: #333333;
+}
+
+.features-list__item--grey span {
+  color: #333333;
 }
 
 .features-list__item--white p {
   width: 285px;
   margin-bottom: 68px;
+
+  color: #333333;
 }
 
 .search__intro {
@@ -332,6 +339,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  color: #333333;
 }
 
 .search__open-button {
@@ -385,7 +393,6 @@ input[type="radio"].visually-hidden {
 
 .search__form input:focus {
   background-color: #ffffff;
-
 }
 
 .search__wrapper {
@@ -404,8 +411,6 @@ input[type="radio"].visually-hidden {
 
 .search__item--date label {
   width: 91px;
-
-  /*margin-right: 6px;*/
 }
 
 .search__item--small {
@@ -460,7 +465,6 @@ input[type="radio"].visually-hidden {
 
   border: none;
   cursor: pointer;
-
 }
 
 .search__date-button:hover path,
@@ -617,7 +621,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-
 /* стили для иннер */
 
 .hotel-filter {
@@ -639,7 +642,6 @@ input[type="radio"].visually-hidden {
 .hotel-filter__field-container {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .hotel-filter__field {
@@ -668,7 +670,6 @@ input[type="radio"].visually-hidden {
 
 .hotel-filter__field--price {
   margin-left: 197px;
-  /*width: 328px;*/
 }
 
 .hotel-filter__field legend {
@@ -691,12 +692,12 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-filter__option {
-
-  padding-bottom: 23px;
+  padding-bottom: 28px;
 }
 
 .hotel-filter__option:last-of-type {
-  padding-bottom: 35px;
+  margin-top: -5px;
+  padding-bottom: 30px;
 }
 
 .hotel-filter__option label {
@@ -707,8 +708,6 @@ input[type="radio"].visually-hidden {
 
   cursor: pointer;
 }
-
-
 
 .hotel-filter__checkbox + label::before {
   content: "";
@@ -908,8 +907,10 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
 }
 
-.search-result span {
+.search-result h3 {
   width: 120px;
+  margin: 0;
+  padding: 0;
   padding-top: 36px;
   padding-bottom: 30px;
 
@@ -980,7 +981,6 @@ input[type="radio"].visually-hidden {
 
 .search-result__pointer {
   display: inline-block;
-  /*margin-right: 13px;*/
   width: 11px;
   height: 10px;
 
@@ -1154,7 +1154,7 @@ input[type="radio"].visually-hidden {
   width: 90px;
   height: 17px;
 
-  background-image: url("../img/star-4.png"); /* */
+  background-image: url("../img/star-4.png");
   background-repeat: no-repeat;
 }
 
@@ -1188,16 +1188,12 @@ input[type="radio"].visually-hidden {
 
 /*конец стилей для инер */
 
-
 .footer {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 36px;
   padding-bottom: 36px;
-
-  /*min-height: 120px;*/
-
 
   background-color: rgba(255,255,255,0.9);
 }
@@ -1218,7 +1214,6 @@ input[type="radio"].visually-hidden {
   width: 400px;
   margin: 0 auto;
 
-  /*text-align: center;*/
   font-size: 21px;
 }
 
@@ -1259,7 +1254,6 @@ input[type="radio"].visually-hidden {
 .social-button:active path {
   opacity: 0.3;
 }
-
 
 .footer__copyright {
   display: flex;
