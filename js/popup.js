@@ -1,5 +1,5 @@
 var link = document.querySelector(".search__open-button");
-var popup = document.querySelector(".search__form--off");
+var popup = document.querySelector(".search__form");
 
 var form = document.querySelector("form");
 var dateIn = popup.querySelector("[name=date-in]");
@@ -18,7 +18,7 @@ try {
 
 link.addEventListener("click", function(evt) {
   evt.preventDefault();
-  popup.classList.toggle("search__form");
+  popup.classList.toggle("search__form--on");
 });
 
 form.addEventListener("submit", function(evt) {
