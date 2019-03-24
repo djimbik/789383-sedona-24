@@ -128,7 +128,7 @@ background-position:
   50% 450px,
   50% -56px;
 
-background-color: #ffffff;
+background-color: #b8d3e5;
 }
 
 .intro {
@@ -148,8 +148,6 @@ text-align: center;
 }
 
 .reasons {
-margin-bottom: 50px;
-
 background-color: #ffffff;
 }
 
@@ -364,8 +362,9 @@ color: #333333;
 }
 
 .search__open-button {
-display: inline-block;
+display: flex;
 padding: 30px 140px;
+margin: 0 auto;
 
 font: inherit;
 font-size: 21px;
@@ -509,16 +508,16 @@ display: none;
 display: block;
 
 position: absolute;
+left: 26.33%;
+right: 26.33%;
 z-index: 10;
 
 width: 569px;
-margin: 0 auto;
 padding: 0;
 
 background-color: #ffffff;
 
 -webkit-animation: bounce 1s;
-
         animation: bounce 1s;
 -webkit-transform-origin: 100% 0%;
     -ms-transform-origin: 100% 0%;
@@ -554,7 +553,7 @@ display: flex;
 -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 width: 460px;
-margin-left: 59px;
+margin-left: 58px;
 }
 
 .search__item {
@@ -577,6 +576,7 @@ display: flex;
         align-items: center;
 
 width: 230px;
+padding-top: 3px;
 }
 
 .search__item:first-of-type {
@@ -605,7 +605,7 @@ width: 344px;
 padding-top: 6px;
 padding-right: 30px;
 padding-bottom: 6px;
-padding-left: 13px;
+padding-left: 10px;
 }
 
 .search__date--in {
@@ -941,6 +941,14 @@ background-image: url("../img/checkbox-off-disabled.png");
 background-image: url("../img/checkbox-on-disabled.png");
 }
 
+.hotel-filter__checkbox:focus + label::before {
+box-shadow: 0 0 0 3px #1c6cf1;
+}
+
+.hotel-filter__checkbox:focus:checked + label::after {
+box-shadow: 0 0 0 3px #1c6cf1;
+}
+
 .hotel-filter__price-controls {
 position: relative;
 
@@ -1054,9 +1062,10 @@ left: 80%;
 }
 
 .hotel-filter__button {
-display: block;
-margin-left: 83px;
+display: flex;
+margin: 0 auto;
 padding: 6px 35px;
+max-width: 300px;
 
 font: inherit;
 font-size: 14px;
@@ -1083,8 +1092,9 @@ background-color: #ffffff;
 .search {
 position: relative;
 
-width: 576px;
+width: 1200px;
 margin: 0 auto;
+padding-top: 50px;
 
 background-color: #ffffff;
 }
@@ -1519,6 +1529,10 @@ margin: 0 auto;
 margin-right: 8px;
 
 font-weight: 400;
+}
+
+.footer__button {
+  padding-top: 5px;
 }
 
 .footer__button:hover path,
